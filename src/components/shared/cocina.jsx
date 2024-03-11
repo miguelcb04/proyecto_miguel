@@ -7,13 +7,10 @@ import {
   RiCloseLine,
   RiArrowDownSLine,
 } from "react-icons/ri";
-// Components
-import Sidebar from "./components/shared/Sidebar";
-import Car from "./components/shared/Car";
 import Header from "./components/shared/Header";
-import Card from "./components/shared/Card";
+import Card from "./Card";
 
-function App() {
+function cocina() {
   const [showMenu, setShowMenu] = useState(false);
   const [showOrder, setShowOrder] = useState(false);
 
@@ -58,43 +55,6 @@ function App() {
           <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
             {/* Card */}
             <Card
-              img="sofa.jpeg"
-              description="Sofa esquinero de lujo"
-              price="5699,90€"
-              // inventory="12"
-            />
-            {/* Card */}
-            <Card
-              img="mesa.png"
-              description="Mesa de TV de diseño moderno modelo Estoril"
-              price="1225,00€"
-            />
-            {/* Card */}
-            <Card
-              img="vitrina.png"
-              description="Vitrina de lujo modelo Cerdeña"
-              price="1925.00€"
-            />
-            {/* Card */}
-            <Card
-              img="canape.webp"
-              description="Canapé abatible Waybox Blanco"
-              price="525,99€"
-            />
-            {/* Card */}
-            <Card
-              img="colchon.webp"
-              description="Colchon Hybrid Luxe Edition"
-              price="1418€"
-            />
-            {/* Card */}
-            <Card
-              img="mesilla.webp"
-              description="Mesita de noche de lujo moca/latón"
-              price="2540,90€"
-            />
-            {/* Card */}
-            <Card
               img="isla.webp"
               description="Mueble de cocina Japandi de madera gris"
               price="1159,99€"
@@ -119,4 +79,4 @@ function App() {
   );
 }
 
-export default App;
+export default cocina;
