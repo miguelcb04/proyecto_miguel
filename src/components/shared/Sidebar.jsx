@@ -7,8 +7,11 @@ import {
   RiNotification3Line,
   RiSettings4Line,
   RiLogoutCircleRLine,
+  
 } from "react-icons/ri";
-
+import { GiSofa } from "react-icons/gi";
+import { CgSmartHomeRefrigerator } from "react-icons/cg";
+import { FaBed } from "react-icons/fa";
 const Sidebar = (props) => {
   const { showMenu } = props;
 
@@ -40,26 +43,26 @@ const Sidebar = (props) => {
           </li>
           <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
-              href="#"
+              href="#salon"
               className="group-hover:bg-[#ec7c6a] p-4 flex justify-center rounded-xl text-[#ec7c6a] group-hover:text-white transition-colors"
             >
-              <RiPercentLine className="text-2xl" />
+              <GiSofa className="text-2xl" />
             </a>
           </li>
           <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
-              href="#"
+              href="#dormitorio"
               className="group-hover:bg-[#ec7c6a] p-4 flex justify-center rounded-xl text-[#ec7c6a] group-hover:text-white transition-colors"
             >
-              <RiPieChartLine className="text-2xl" />
+              <FaBed className="text-2xl" />
             </a>
           </li>
           <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
-              href="#"
+              href="#cocina"
               className="group-hover:bg-[#ec7c6a] p-4 flex justify-center rounded-xl text-[#ec7c6a] group-hover:text-white transition-colors"
             >
-              <RiMailLine className="text-2xl" />
+              <CgSmartHomeRefrigerator className="text-2xl" />
             </a>
           </li>
           {/* <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
@@ -72,10 +75,10 @@ const Sidebar = (props) => {
           </li> */}
           <li className="hover:bg-[#262837] p-4 rounded-tl-xl rounded-bl-xl group transition-colors">
             <a
-              href="#"
+              href=""
               className="group-hover:bg-[#ec7c6a] p-4 flex justify-center rounded-xl text-[#ec7c6a] group-hover:text-white transition-colors"
             >
-              <RiSettings4Line className="text-2xl" />
+              <RiPieChartLine className="text-2xl" />
             </a>
           </li>
         </ul>

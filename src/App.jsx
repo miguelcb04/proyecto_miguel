@@ -12,6 +12,7 @@ import Sidebar from "./components/shared/Sidebar";
 import Car from "./components/shared/Car";
 import Header from "./components/shared/Header";
 import Card from "./components/shared/Card";
+import Footer from "./components/shared/Footer";
 
 function App() {
   const [showMenu, setShowMenu] = useState(false);
@@ -51,11 +52,19 @@ function App() {
           {/* Header */}
           <Header />
           {/* Title content */}
-          <div className="flex items-center justify-between mb-16">
-            <h2 className="text-xl text-gray-300">Articulos</h2>
+          {/* <div className="flex items-center justify-between mb-16">
+            <h2 className="text-xl text-gray-300">Descripción</h2>
+          </div> */}
+          <div className="bg-[#1F1D2B] p-4 text-gray-400">
+            <h1 className="text-xl text-gray-300 p-4">Descripción</h1>
+          <p className="p-4">FURNITURE es una tienda especializada que ofrece una amplia gama de objetos de decoración y muebles para interiores, centrados en mejorar y embellecer los espacios de salón, cocina y dormitorio. Con un enfoque en la calidad, el diseño innovador y la funcionalidad, FURNITURE se dedica a proporcionar a sus clientes una experiencia de compra excepcional y soluciones que satisfagan sus necesidades y gustos estéticos.</p>
+          </div>
+          <div className="flex items-center justify-between mb-16 mt-10">
+            <h2 className="text-xl text-gray-300 p-4" id="salon">Salón</h2>
           </div>
           {/* Content */}
-          <div className="p-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
+          <div>
+          <div className="p-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
             {/* Card */}
             <Card
               img="sofa.jpeg"
@@ -75,11 +84,16 @@ function App() {
               description="Vitrina de lujo modelo Cerdeña"
               price="1925.00€"
             />
+            </div>
+            <div className="flex items-center justify-between mb-16 mt-10">
+            <h2 className="text-xl text-gray-300 p-4" id="dormitorio">Dormitorio</h2>
+          </div>
+            <div className="p-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
             {/* Card */}
             <Card
               img="canape.webp"
               description="Canapé abatible Waybox Blanco"
-              price="525,99€"
+              price="1025,99€"
             />
             {/* Card */}
             <Card
@@ -93,6 +107,11 @@ function App() {
               description="Mesita de noche de lujo moca/latón"
               price="2540,90€"
             />
+            </div>
+            <div className="flex items-center justify-between mb-16 mt-10">
+            <h2 className="text-xl text-gray-300 p-4" id="cocina">Cocina</h2>
+          </div>
+            <div className="p-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-16">
             {/* Card */}
             <Card
               img="isla.webp"
@@ -108,13 +127,15 @@ function App() {
             {/* Card */}
             <Card
               img="mueble.webp"
-              description="Tire cesta de mimbre con madera Haya"
+              description="Tira cesta de mimbre con madera Haya"
               price="130,99€"
             />
             {/* Card */}
+            </div>
           </div>
         </div>
       </main>
+      <Footer></Footer>
     </div>
   );
 }

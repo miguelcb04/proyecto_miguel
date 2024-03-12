@@ -15,25 +15,15 @@ const Card = (props) => {
           onClick={() => setShowOrder(false)}
           className="lg:hidden absolute left-4 top-4 p-3 box-content text-gray-300 bg-[#262837] rounded-full text-xl"
         />
-        <h1 className="text-2xl my-4">Orders #151416</h1>
+        <h1 className="text-2xl my-4">Pedido</h1>
         {/* Pills */}
-        <div className="flex items-center gap-4 flex-wrap mb-8">
-          <button className="bg-[#ec7c6a] text-white py-2 px-4 rounded-xl">
-            Dine In
-          </button>
-          <button className="text-[#ec7c6a] py-2 px-4 rounded-xl border border-gray-500">
-            To Go
-          </button>
-          <button className="text-[#ec7c6a] py-2 px-4 rounded-xl border border-gray-500">
-            Delivery
-          </button>
-        </div>
+
         {/* Car */}
         <div>
           <div className="grid grid-cols-6 mb-4 p-4">
-            <h5 className="col-span-4">Item</h5>
-            <h5>Qty</h5>
-            <h5>Price</h5>
+            <h5 className="col-span-4">Objeto</h5>
+            <h5 className="">Cant</h5>
+            <h5>Precio</h5>
           </div>
           {/* Products */}
           <div className="h-[400px] md:h-[700px] lg:h-[540px] overflow-scroll">
@@ -42,19 +32,19 @@ const Card = (props) => {
               <div className="grid grid-cols-6 mb-4">
                 {/* Product description */}
                 <div className="col-span-4 flex items-center gap-3">
-                  <img src="comida.png" className="w-10 h-10 object-cover" />
+                  <img src="canape.webp" className="w-10 h-10 object-cover" />
                   <div>
-                    <h5 className="text-sm">Spaicy seaso...</h5>
-                    <p className="text-xs text-gray-500">$2.29</p>
+                    <h5 className="text-sm">Canapé abatible ...</h5>
+                    <p className="text-xs text-gray-500">1025,99€</p>
                   </div>
                 </div>
                 {/* Qty */}
                 <div>
-                  <span>2</span>
+                  <span>1</span>
                 </div>
                 {/* Price */}
                 <div>
-                  <span>$4.58</span>
+                  <span>1025,99€</span>
                 </div>
               </div>
               {/* Note */}
@@ -63,7 +53,7 @@ const Card = (props) => {
                   <input
                     type="text"
                     className="bg-[#1F1D2B] py-2 px-4 rounded-lg outline-none"
-                    placeholder="Order note..."
+                    placeholder="Color"
                   />
                 </form>
                 <div>
@@ -78,19 +68,19 @@ const Card = (props) => {
               <div className="grid grid-cols-6 mb-4">
                 {/* Product description */}
                 <div className="col-span-4 flex items-center gap-3">
-                  <img src="comida.png" className="w-10 h-10 object-cover" />
+                  <img src="mesilla.webp" className="w-10 h-10 object-cover" />
                   <div>
-                    <h5 className="text-sm">Spaicy seaso...</h5>
-                    <p className="text-xs text-gray-500">$2.29</p>
+                    <h5 className="text-sm">Mesita de noche...</h5>
+                    <p className="text-xs text-gray-500">2540,90€</p>
                   </div>
                 </div>
                 {/* Qty */}
                 <div>
-                  <span>2</span>
+                  <span>1</span>
                 </div>
                 {/* Price */}
                 <div>
-                  <span>$4.58</span>
+                  <span>2540,90€</span>
                 </div>
               </div>
               {/* Note */}
@@ -99,79 +89,7 @@ const Card = (props) => {
                   <input
                     type="text"
                     className="bg-[#1F1D2B] py-2 px-4 rounded-lg outline-none"
-                    placeholder="Order note..."
-                  />
-                </form>
-                <div>
-                  <button className="border border-red-500 p-2 rounded-lg">
-                    <RiDeleteBin6Line className="text-red-500" />
-                  </button>
-                </div>
-              </div>
-            </div>
-            {/* Product */}
-            <div className="bg-[#262837] p-4 rounded-xl mb-4">
-              <div className="grid grid-cols-6 mb-4">
-                {/* Product description */}
-                <div className="col-span-4 flex items-center gap-3">
-                  <img src="comida.png" className="w-10 h-10 object-cover" />
-                  <div>
-                    <h5 className="text-sm">Spaicy seaso...</h5>
-                    <p className="text-xs text-gray-500">$2.29</p>
-                  </div>
-                </div>
-                {/* Qty */}
-                <div>
-                  <span>2</span>
-                </div>
-                {/* Price */}
-                <div>
-                  <span>$4.58</span>
-                </div>
-              </div>
-              {/* Note */}
-              <div className="grid grid-cols-6 items-center">
-                <form className="col-span-5">
-                  <input
-                    type="text"
-                    className="bg-[#1F1D2B] py-2 px-4 rounded-lg outline-none"
-                    placeholder="Order note..."
-                  />
-                </form>
-                <div>
-                  <button className="border border-red-500 p-2 rounded-lg">
-                    <RiDeleteBin6Line className="text-red-500" />
-                  </button>
-                </div>
-              </div>
-            </div>
-            {/* Product */}
-            <div className="bg-[#262837] p-4 rounded-xl mb-4">
-              <div className="grid grid-cols-6 mb-4">
-                {/* Product description */}
-                <div className="col-span-4 flex items-center gap-3">
-                  <img src="comida.png" className="w-10 h-10 object-cover" />
-                  <div>
-                    <h5 className="text-sm">Spaicy seaso...</h5>
-                    <p className="text-xs text-gray-500">$2.29</p>
-                  </div>
-                </div>
-                {/* Qty */}
-                <div>
-                  <span>2</span>
-                </div>
-                {/* Price */}
-                <div>
-                  <span>$4.58</span>
-                </div>
-              </div>
-              {/* Note */}
-              <div className="grid grid-cols-6 items-center">
-                <form className="col-span-5">
-                  <input
-                    type="text"
-                    className="bg-[#1F1D2B] py-2 px-4 rounded-lg outline-none"
-                    placeholder="Order note..."
+                    placeholder="Color..."
                   />
                 </form>
                 <div>
@@ -186,16 +104,16 @@ const Card = (props) => {
         {/* Submit payment */}
         <div className="bg-[#262837] absolute w-full bottom-0 left-0 p-4">
           <div className="flex items-center justify-between mb-4">
-            <span className="text-gray-400">Discount</span>
-            <span>$0</span>
+            <span className="text-gray-400">Descuento</span>
+            <span>66.89€</span>
           </div>
           <div className="flex items-center justify-between mb-6">
             <span className="text-gray-400">Subtotal</span>
-            <span>$201.03</span>
+            <span>3500€</span>
           </div>
           <div>
             <button className="bg-[#ec7c6a] w-full py-2 px-4 rounded-lg">
-              Continue to payment
+              Continuar con el pago
             </button>
           </div>
         </div>
